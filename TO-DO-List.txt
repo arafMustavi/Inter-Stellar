@@ -1,0 +1,4 @@
+Deploy Nodes
+Central Bank to only have the token issue command
+Adding the New Nodes from the central Bank Authority
+Making Payments
