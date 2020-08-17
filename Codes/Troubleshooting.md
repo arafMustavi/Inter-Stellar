@@ -1,4 +1,4 @@
-Here is a list of common issues encountered during the bootcamp, and how to fix them.
+Here is a list of common issues encountered during the InterStellar, and how to fix them.
 
 * `java.io.NotSerializableException: net.corda.core.contracts.TransactionState -> data(net.corda.core.contracts.ContractState) -> Constructor parameter - "arg0" -  doesn't refer to a property of "class java_bootcamp.TokenState" -> class java_bootcamp.TokenState`
 
@@ -53,4 +53,4 @@ Here is a list of common issues encountered during the bootcamp, and how to fix 
 
     Task: `:cleanTest :test`
 
-    Arguments: `--tests "bootcamp.StateTests"` (or ContractTests or FlowTests)
+    Arguments: `--tests "InterStellar.StateTests"` (or ContractTests or FlowTests)

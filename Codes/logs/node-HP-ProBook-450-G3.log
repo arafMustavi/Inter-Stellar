@@ -2,7 +2,7 @@
 [INFO ] 2020-08-03T20:35:05,674Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/generated-custom-cordapps/20200803-203503.919/custom-cordapp_1_5_d3d1e51b-765a-4ee8-9c4e-bc5d1a1720da.jar {}
 [ERROR] 2020-08-03T20:35:12,328Z [Test worker] internal.Verifier. - Error validating transaction C7B0B4597A0B64DDA21AC05FECE8979B9AF930B0EED99CC6FF4A9CC72AD41902. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: One Output Expected
-	at bootcamp.TokenContract.verify(TokenContract.java:22) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:22) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -19,7 +19,7 @@ java.lang.IllegalArgumentException: One Output Expected
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresOneOutputInTheTransaction$2(ContractTests.java:54) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresOneOutputInTheTransaction$2(ContractTests.java:54) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -34,7 +34,7 @@ java.lang.IllegalArgumentException: One Output Expected
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresOneOutputInTheTransaction(ContractTests.java:49) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresOneOutputInTheTransaction(ContractTests.java:49) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -84,7 +84,7 @@ java.lang.IllegalArgumentException: One Output Expected
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
 [ERROR] 2020-08-03T20:35:12,345Z [Test worker] internal.Verifier. - Error validating transaction C7B0B4597A0B64DDA21AC05FECE8979B9AF930B0EED99CC6FF4A9CC72AD41902. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: One Output Expected
-	at bootcamp.TokenContract.verify(TokenContract.java:22) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:22) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -96,7 +96,7 @@ java.lang.IllegalArgumentException: One Output Expected
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresOneOutputInTheTransaction$2(ContractTests.java:54) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresOneOutputInTheTransaction$2(ContractTests.java:54) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -111,7 +111,7 @@ java.lang.IllegalArgumentException: One Output Expected
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresOneOutputInTheTransaction(ContractTests.java:49) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresOneOutputInTheTransaction(ContractTests.java:49) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -164,7 +164,7 @@ java.lang.IllegalArgumentException: One Output Expected
 [WARN ] 2020-08-03T20:35:15,392Z [Test worker] cordapp.CordappResolver. - The CorDapp (name: Contract: custom-cordapp, Workflow: custom-cordapp, file: custom-cordapp_1_5_d3d1e51b-765a-4ee8-9c4e-bc5d1a1720da) is installed multiple times on the node. The following files correspond to the exact same content: [custom-cordapp_1_5_d3d1e51b-765a-4ee8-9c4e-bc5d1a1720da] {}
 [ERROR] 2020-08-03T20:35:17,535Z [Test worker] internal.Verifier. - Error validating transaction 0ABF248DA9ED6C3AB9CB943F5FFEA0A4D09BB43723C719926C3AC578465D7F05. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: Issuer Must Sign
-	at bootcamp.TokenContract.verify(TokenContract.java:50) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:50) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -181,7 +181,7 @@ java.lang.IllegalArgumentException: Issuer Must Sign
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction$14(ContractTests.java:172) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction$14(ContractTests.java:172) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -196,7 +196,7 @@ java.lang.IllegalArgumentException: Issuer Must Sign
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction(ContractTests.java:168) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction(ContractTests.java:168) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -246,7 +246,7 @@ java.lang.IllegalArgumentException: Issuer Must Sign
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
 [ERROR] 2020-08-03T20:35:17,541Z [Test worker] internal.Verifier. - Error validating transaction 0ABF248DA9ED6C3AB9CB943F5FFEA0A4D09BB43723C719926C3AC578465D7F05. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: Issuer Must Sign
-	at bootcamp.TokenContract.verify(TokenContract.java:50) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:50) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -258,7 +258,7 @@ java.lang.IllegalArgumentException: Issuer Must Sign
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction$14(ContractTests.java:172) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction$14(ContractTests.java:172) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -273,7 +273,7 @@ java.lang.IllegalArgumentException: Issuer Must Sign
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction(ContractTests.java:168) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction(ContractTests.java:168) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -323,7 +323,7 @@ java.lang.IllegalArgumentException: Issuer Must Sign
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
 [ERROR] 2020-08-03T20:35:20,013Z [Test worker] internal.Verifier. - Error validating transaction EDDE33FDC514982E600F8BA7694603C27737155CE1F3FF1EBB9CBA9884502F25. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: Issuer Must Sign
-	at bootcamp.TokenContract.verify(TokenContract.java:50) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:50) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -340,7 +340,7 @@ java.lang.IllegalArgumentException: Issuer Must Sign
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction$15(ContractTests.java:180) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction$15(ContractTests.java:180) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -355,7 +355,7 @@ java.lang.IllegalArgumentException: Issuer Must Sign
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction(ContractTests.java:176) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction(ContractTests.java:176) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -405,7 +405,7 @@ java.lang.IllegalArgumentException: Issuer Must Sign
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
 [ERROR] 2020-08-03T20:35:20,034Z [Test worker] internal.Verifier. - Error validating transaction EDDE33FDC514982E600F8BA7694603C27737155CE1F3FF1EBB9CBA9884502F25. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: Issuer Must Sign
-	at bootcamp.TokenContract.verify(TokenContract.java:50) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:50) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -417,7 +417,7 @@ java.lang.IllegalArgumentException: Issuer Must Sign
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction$15(ContractTests.java:180) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction$15(ContractTests.java:180) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -432,7 +432,7 @@ java.lang.IllegalArgumentException: Issuer Must Sign
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction(ContractTests.java:176) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction(ContractTests.java:176) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -484,13 +484,13 @@ java.lang.IllegalArgumentException: Issuer Must Sign
 [INFO ] 2020-08-03T20:35:24,513Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/generated-custom-cordapps/20200803-203503.919/custom-cordapp_1_5_d3d1e51b-765a-4ee8-9c4e-bc5d1a1720da.jar {}
 [INFO ] 2020-08-03T20:35:24,658Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/generated-custom-cordapps/20200803-203503.919/custom-cordapp_1_5_d3d1e51b-765a-4ee8-9c4e-bc5d1a1720da.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:35:24,658Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/generated-custom-cordapps/20200803-203503.919/custom-cordapp_1_5_d3d1e51b-765a-4ee8-9c4e-bc5d1a1720da.jar {}
-[WARN ] 2020-08-03T20:35:24,873Z [Test worker] contracts.TransactionState. - State class net.corda.testing.contracts.DummyState belongs to contract net.corda.testing.contracts.DummyContract, but is bundled with contract bootcamp.TokenContract in TransactionState. Annotate DummyState with @BelongsToContract(bootcamp.TokenContract.class) to remove this warning. {}
-[WARN ] 2020-08-03T20:35:24,891Z [Test worker] contracts.TransactionState. - State class net.corda.testing.contracts.DummyState belongs to contract net.corda.testing.contracts.DummyContract, but is bundled with contract bootcamp.TokenContract in TransactionState. Annotate DummyState with @BelongsToContract(bootcamp.TokenContract.class) to remove this warning. {}
-[WARN ] 2020-08-03T20:35:26,768Z [Test worker] contracts.TransactionState. - State class net.corda.testing.contracts.DummyState belongs to contract net.corda.testing.contracts.DummyContract, but is bundled with contract bootcamp.TokenContract in TransactionState. Annotate DummyState with @BelongsToContract(bootcamp.TokenContract.class) to remove this warning. {}
-[WARN ] 2020-08-03T20:35:26,769Z [Test worker] internal.Verifier. - State of class net.corda.testing.contracts.DummyState belongs to contract net.corda.testing.contracts.DummyContract, but is bundled in TransactionState with bootcamp.TokenContract.  For details see: https://docs.corda.net/api-contract-constraints.html#contract-state-agreement {}
+[WARN ] 2020-08-03T20:35:24,873Z [Test worker] contracts.TransactionState. - State class net.corda.testing.contracts.DummyState belongs to contract net.corda.testing.contracts.DummyContract, but is bundled with contract InterStellar.TokenContract in TransactionState. Annotate DummyState with @BelongsToContract(InterStellar.TokenContract.class) to remove this warning. {}
+[WARN ] 2020-08-03T20:35:24,891Z [Test worker] contracts.TransactionState. - State class net.corda.testing.contracts.DummyState belongs to contract net.corda.testing.contracts.DummyContract, but is bundled with contract InterStellar.TokenContract in TransactionState. Annotate DummyState with @BelongsToContract(InterStellar.TokenContract.class) to remove this warning. {}
+[WARN ] 2020-08-03T20:35:26,768Z [Test worker] contracts.TransactionState. - State class net.corda.testing.contracts.DummyState belongs to contract net.corda.testing.contracts.DummyContract, but is bundled with contract InterStellar.TokenContract in TransactionState. Annotate DummyState with @BelongsToContract(InterStellar.TokenContract.class) to remove this warning. {}
+[WARN ] 2020-08-03T20:35:26,769Z [Test worker] internal.Verifier. - State of class net.corda.testing.contracts.DummyState belongs to contract net.corda.testing.contracts.DummyContract, but is bundled in TransactionState with InterStellar.TokenContract.  For details see: https://docs.corda.net/api-contract-constraints.html#contract-state-agreement {}
 [ERROR] 2020-08-03T20:35:26,769Z [Test worker] internal.Verifier. - Error validating transaction BC3D41563901D32CD8EC570EC3F7DA20D29AEA69896ABF6DD606BFE95FAD3A5B. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: Token State Expected
-	at bootcamp.TokenContract.verify(TokenContract.java:36) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:36) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -507,7 +507,7 @@ java.lang.IllegalArgumentException: Token State Expected
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresTheTransactionsOutputToBeATokenState$6(ContractTests.java:93) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresTheTransactionsOutputToBeATokenState$6(ContractTests.java:93) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -522,7 +522,7 @@ java.lang.IllegalArgumentException: Token State Expected
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresTheTransactionsOutputToBeATokenState(ContractTests.java:89) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresTheTransactionsOutputToBeATokenState(ContractTests.java:89) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -570,10 +570,10 @@ java.lang.IllegalArgumentException: Token State Expected
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_241]
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) ~[gradle-tooling-api-5.4.1.jar:5.4.1]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
-[WARN ] 2020-08-03T20:35:26,776Z [Test worker] contracts.TransactionState. - State class net.corda.testing.contracts.DummyState belongs to contract net.corda.testing.contracts.DummyContract, but is bundled with contract bootcamp.TokenContract in TransactionState. Annotate DummyState with @BelongsToContract(bootcamp.TokenContract.class) to remove this warning. {}
+[WARN ] 2020-08-03T20:35:26,776Z [Test worker] contracts.TransactionState. - State class net.corda.testing.contracts.DummyState belongs to contract net.corda.testing.contracts.DummyContract, but is bundled with contract InterStellar.TokenContract in TransactionState. Annotate DummyState with @BelongsToContract(InterStellar.TokenContract.class) to remove this warning. {}
 [ERROR] 2020-08-03T20:35:26,777Z [Test worker] internal.Verifier. - Error validating transaction BC3D41563901D32CD8EC570EC3F7DA20D29AEA69896ABF6DD606BFE95FAD3A5B. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: Token State Expected
-	at bootcamp.TokenContract.verify(TokenContract.java:36) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:36) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -585,7 +585,7 @@ java.lang.IllegalArgumentException: Token State Expected
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresTheTransactionsOutputToBeATokenState$6(ContractTests.java:93) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresTheTransactionsOutputToBeATokenState$6(ContractTests.java:93) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -600,7 +600,7 @@ java.lang.IllegalArgumentException: Token State Expected
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresTheTransactionsOutputToBeATokenState(ContractTests.java:89) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresTheTransactionsOutputToBeATokenState(ContractTests.java:89) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -652,7 +652,7 @@ java.lang.IllegalArgumentException: Token State Expected
 [INFO ] 2020-08-03T20:35:29,260Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/generated-custom-cordapps/20200803-203503.919/custom-cordapp_1_5_d3d1e51b-765a-4ee8-9c4e-bc5d1a1720da.jar {}
 [ERROR] 2020-08-03T20:35:31,398Z [Test worker] internal.Verifier. - Error validating transaction 604322109E4F472F66AF401691C45640A1F534EB5679C62A0F6AFAEE1F994E4A. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: Issue Command Expected
-	at bootcamp.TokenContract.verify(TokenContract.java:46) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:46) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -669,7 +669,7 @@ java.lang.IllegalArgumentException: Issue Command Expected
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresTheTransactionsCommandToBeAnIssueCommand$12(ContractTests.java:151) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresTheTransactionsCommandToBeAnIssueCommand$12(ContractTests.java:151) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -684,7 +684,7 @@ java.lang.IllegalArgumentException: Issue Command Expected
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresTheTransactionsCommandToBeAnIssueCommand(ContractTests.java:147) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresTheTransactionsCommandToBeAnIssueCommand(ContractTests.java:147) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -734,7 +734,7 @@ java.lang.IllegalArgumentException: Issue Command Expected
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
 [ERROR] 2020-08-03T20:35:31,406Z [Test worker] internal.Verifier. - Error validating transaction 604322109E4F472F66AF401691C45640A1F534EB5679C62A0F6AFAEE1F994E4A. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: Issue Command Expected
-	at bootcamp.TokenContract.verify(TokenContract.java:46) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:46) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -746,7 +746,7 @@ java.lang.IllegalArgumentException: Issue Command Expected
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresTheTransactionsCommandToBeAnIssueCommand$12(ContractTests.java:151) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresTheTransactionsCommandToBeAnIssueCommand$12(ContractTests.java:151) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -761,7 +761,7 @@ java.lang.IllegalArgumentException: Issue Command Expected
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresTheTransactionsCommandToBeAnIssueCommand(ContractTests.java:147) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresTheTransactionsCommandToBeAnIssueCommand(ContractTests.java:147) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -813,7 +813,7 @@ java.lang.IllegalArgumentException: Issue Command Expected
 [INFO ] 2020-08-03T20:35:33,864Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/generated-custom-cordapps/20200803-203503.919/custom-cordapp_1_5_d3d1e51b-765a-4ee8-9c4e-bc5d1a1720da.jar {}
 [ERROR] 2020-08-03T20:35:35,859Z [Test worker] internal.Verifier. - Error validating transaction 51C08BFAC7A991459BBCC6B98E34003BF68D16320A84B49B480424D3710482F1. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: One Command Expected
-	at bootcamp.TokenContract.verify(TokenContract.java:25) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:25) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -830,7 +830,7 @@ java.lang.IllegalArgumentException: One Command Expected
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresOneCommandInTheTransaction$4(ContractTests.java:74) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresOneCommandInTheTransaction$4(ContractTests.java:74) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -845,7 +845,7 @@ java.lang.IllegalArgumentException: One Command Expected
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresOneCommandInTheTransaction(ContractTests.java:69) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresOneCommandInTheTransaction(ContractTests.java:69) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -895,7 +895,7 @@ java.lang.IllegalArgumentException: One Command Expected
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
 [ERROR] 2020-08-03T20:35:35,877Z [Test worker] internal.Verifier. - Error validating transaction 51C08BFAC7A991459BBCC6B98E34003BF68D16320A84B49B480424D3710482F1. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: One Command Expected
-	at bootcamp.TokenContract.verify(TokenContract.java:25) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:25) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -907,7 +907,7 @@ java.lang.IllegalArgumentException: One Command Expected
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresOneCommandInTheTransaction$4(ContractTests.java:74) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresOneCommandInTheTransaction$4(ContractTests.java:74) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -922,7 +922,7 @@ java.lang.IllegalArgumentException: One Command Expected
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresOneCommandInTheTransaction(ContractTests.java:69) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresOneCommandInTheTransaction(ContractTests.java:69) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -974,7 +974,7 @@ java.lang.IllegalArgumentException: One Command Expected
 [INFO ] 2020-08-03T20:35:38,368Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/generated-custom-cordapps/20200803-203503.919/custom-cordapp_1_5_d3d1e51b-765a-4ee8-9c4e-bc5d1a1720da.jar {}
 [ERROR] 2020-08-03T20:35:40,681Z [Test worker] internal.Verifier. - Error validating transaction 533CBCBB42329A2E34CA4B06826C87A4B48CD72A471183B6D8987A776DB49B46. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: Positive Expected
-	at bootcamp.TokenContract.verify(TokenContract.java:42) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:42) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -991,7 +991,7 @@ java.lang.IllegalArgumentException: Positive Expected
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount$8(ContractTests.java:116) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount$8(ContractTests.java:116) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -1006,7 +1006,7 @@ java.lang.IllegalArgumentException: Positive Expected
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount(ContractTests.java:112) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount(ContractTests.java:112) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -1056,7 +1056,7 @@ java.lang.IllegalArgumentException: Positive Expected
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
 [ERROR] 2020-08-03T20:35:40,688Z [Test worker] internal.Verifier. - Error validating transaction 533CBCBB42329A2E34CA4B06826C87A4B48CD72A471183B6D8987A776DB49B46. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: Positive Expected
-	at bootcamp.TokenContract.verify(TokenContract.java:42) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:42) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -1068,7 +1068,7 @@ java.lang.IllegalArgumentException: Positive Expected
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount$8(ContractTests.java:116) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount$8(ContractTests.java:116) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -1083,7 +1083,7 @@ java.lang.IllegalArgumentException: Positive Expected
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount(ContractTests.java:112) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount(ContractTests.java:112) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -1133,7 +1133,7 @@ java.lang.IllegalArgumentException: Positive Expected
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
 [ERROR] 2020-08-03T20:35:42,764Z [Test worker] internal.Verifier. - Error validating transaction 29761617E47F3407A4E76256C8D5A3CC4887F331FEA5CBD3B9FE05F2C6009533. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: Positive Expected
-	at bootcamp.TokenContract.verify(TokenContract.java:42) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:42) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -1150,7 +1150,7 @@ java.lang.IllegalArgumentException: Positive Expected
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount$9(ContractTests.java:124) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount$9(ContractTests.java:124) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -1165,7 +1165,7 @@ java.lang.IllegalArgumentException: Positive Expected
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount(ContractTests.java:120) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount(ContractTests.java:120) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -1215,7 +1215,7 @@ java.lang.IllegalArgumentException: Positive Expected
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
 [ERROR] 2020-08-03T20:35:42,773Z [Test worker] internal.Verifier. - Error validating transaction 29761617E47F3407A4E76256C8D5A3CC4887F331FEA5CBD3B9FE05F2C6009533. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: Positive Expected
-	at bootcamp.TokenContract.verify(TokenContract.java:42) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:42) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -1227,7 +1227,7 @@ java.lang.IllegalArgumentException: Positive Expected
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount$9(ContractTests.java:124) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount$9(ContractTests.java:124) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -1242,7 +1242,7 @@ java.lang.IllegalArgumentException: Positive Expected
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount(ContractTests.java:120) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount(ContractTests.java:120) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -1292,10 +1292,10 @@ java.lang.IllegalArgumentException: Positive Expected
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
 [INFO ] 2020-08-03T20:35:48,264Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/generated-custom-cordapps/20200803-203503.919/custom-cordapp_1_5_d3d1e51b-765a-4ee8-9c4e-bc5d1a1720da.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:35:48,265Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/generated-custom-cordapps/20200803-203503.919/custom-cordapp_1_5_d3d1e51b-765a-4ee8-9c4e-bc5d1a1720da.jar {}
-[WARN ] 2020-08-03T20:35:48,453Z [Test worker] contracts.AttachmentConstraint. - Found state bootcamp.TokenContract that is constrained by the insecure: AlwaysAcceptAttachmentConstraint. {}
+[WARN ] 2020-08-03T20:35:48,453Z [Test worker] contracts.AttachmentConstraint. - Found state InterStellar.TokenContract that is constrained by the insecure: AlwaysAcceptAttachmentConstraint. {}
 [ERROR] 2020-08-03T20:35:50,504Z [Test worker] internal.Verifier. - Error validating transaction 72ECB2D205482CF953A953411900E471FBF264A9DBAFB9F647AD34473010E9EC. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: Issue Command Expected
-	at bootcamp.TokenContract.verify(TokenContract.java:46) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:46) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -1307,7 +1307,7 @@ java.lang.IllegalArgumentException: Issue Command Expected
 	at net.corda.testing.dsl.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap(TestDSL.kt:298) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestLedgerDSLInterpreter._unverifiedTransaction(TestDSL.kt:336) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.input(TransactionDSLInterpreter.kt:150) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresZeroInputsInTheTransaction$0(ContractTests.java:31) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresZeroInputsInTheTransaction$0(ContractTests.java:31) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -1322,7 +1322,7 @@ java.lang.IllegalArgumentException: Issue Command Expected
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresZeroInputsInTheTransaction(ContractTests.java:29) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresZeroInputsInTheTransaction(ContractTests.java:29) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -1372,7 +1372,7 @@ java.lang.IllegalArgumentException: Issue Command Expected
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
 [ERROR] 2020-08-03T20:35:50,724Z [Test worker] internal.Verifier. - Error validating transaction EF9C8DEF947E4D8FA7772F6963BAFA1AE86E0DCB7B9FF1BA9C4E1A120825CA68. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: Zero Inputs Expected
-	at bootcamp.TokenContract.verify(TokenContract.java:19) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:19) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -1389,7 +1389,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresZeroInputsInTheTransaction$0(ContractTests.java:34) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresZeroInputsInTheTransaction$0(ContractTests.java:34) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -1404,7 +1404,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresZeroInputsInTheTransaction(ContractTests.java:29) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresZeroInputsInTheTransaction(ContractTests.java:29) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -1454,7 +1454,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
 [ERROR] 2020-08-03T20:35:50,739Z [Test worker] internal.Verifier. - Error validating transaction EF9C8DEF947E4D8FA7772F6963BAFA1AE86E0DCB7B9FF1BA9C4E1A120825CA68. [errorCode=gtgacr, moreInformationAt=https://errors.corda.net/OS/4.3/gtgacr] {}
 java.lang.IllegalArgumentException: Zero Inputs Expected
-	at bootcamp.TokenContract.verify(TokenContract.java:19) ~[main/:?]
+	at InterStellar.TokenContract.verify(TokenContract.java:19) ~[main/:?]
 	at net.corda.core.internal.Verifier.verifyContracts(TransactionVerifierServiceInternal.kt:400) ~[corda-core-4.3.jar:?]
 	at net.corda.core.internal.Verifier.verify(TransactionVerifierServiceInternal.kt:72) ~[corda-core-4.3.jar:?]
 	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:136) ~[corda-core-4.3.jar:?]
@@ -1466,7 +1466,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 	at net.corda.testing.dsl.TransactionDSLInterpreter$DefaultImpls.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TestTransactionDSLInterpreter.fails(TestDSL.kt:74) ~[corda-test-utils-4.3.jar:?]
 	at net.corda.testing.dsl.TransactionDSL.fails(TransactionDSLInterpreter.kt) ~[corda-test-utils-4.3.jar:?]
-	at bootcamp.ContractTests.lambda$tokenContractRequiresZeroInputsInTheTransaction$0(ContractTests.java:34) ~[test/:?]
+	at InterStellar.ContractTests.lambda$tokenContractRequiresZeroInputsInTheTransaction$0(ContractTests.java:34) ~[test/:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt:54) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$transaction$1.invoke(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils$ledger$2.invoke(NodeTestUtils.kt:39) ~[corda-node-driver-4.3.jar:?]
@@ -1481,7 +1481,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt:53) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction$default(NodeTestUtils.kt:51) ~[corda-node-driver-4.3.jar:?]
 	at net.corda.testing.node.NodeTestUtils.transaction(NodeTestUtils.kt) ~[corda-node-driver-4.3.jar:?]
-	at bootcamp.ContractTests.tokenContractRequiresZeroInputsInTheTransaction(ContractTests.java:29) ~[test/:?]
+	at InterStellar.ContractTests.tokenContractRequiresZeroInputsInTheTransaction(ContractTests.java:29) ~[test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
@@ -1590,7 +1590,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:38:40,852Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203821.577/nodes/0/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:38:40,914Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203821.577/nodes/0/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:38:42,815Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:38:42,981Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:38:42,981Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:38:42,983Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:38:43,332Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -1643,7 +1643,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:02,069Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203821.577/nodes/1/cordapps/Project-InterSteller.jar {}
 [WARN ] 2020-08-03T20:39:02,093Z [Test worker] cordapp.CordappResolver. - The CorDapp (name: Contract: Bootcamp Contracts, Workflow: Bootcamp Flows, file: Project-InterSteller) is installed multiple times on the node. The following files correspond to the exact same content: [Project-InterSteller] {}
 [INFO ] 2020-08-03T20:39:02,151Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:02,215Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:02,215Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:02,215Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:02,224Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -1698,7 +1698,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:04,948Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203821.577/nodes/2/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:04,949Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203821.577/nodes/2/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:05,023Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:05,106Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:05,106Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:05,106Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:05,116Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -1754,7 +1754,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:07,758Z [Test worker] network.PersistentNetworkMapCache. - Adding node with info: NodeInfo(addresses=[mock.node:1000], legalIdentitiesAndCerts=[O=Mock Company 2, L=London, C=GB], platformVersion=5, serial=1596487147477) {}
 [INFO ] 2020-08-03T20:39:07,758Z [Test worker] network.PersistentNetworkMapCache. - Previous node was identical to incoming one - doing nothing {}
 [WARN ] 2020-08-03T20:39:08,388Z [Mock network] transactions.TransactionBuilder. - Signature constraints not available on network requiring a minimum platform version of 4. Current is: 1. {actor_id=Only For Testing, actor_owning_identity=O=Mock Company 1, L=London, C=GB, actor_store_id=TEST, fiber-id=10000001, flow-id=728c17b6-5dee-402d-a7d2-bea19968f488, invocation_id=61d4c534-77d9-413d-aa06-8e649a9ca746, invocation_timestamp=2020-08-03T20:39:07.889Z, origin=Only For Testing, session_id=61d4c534-77d9-413d-aa06-8e649a9ca746, session_timestamp=2020-08-03T20:39:07.889Z, thread-id=106}
-[WARN ] 2020-08-03T20:39:08,388Z [Mock network] transactions.TransactionBuilder. - Reverting back to using hash constraints for contract bootcamp.TokenContract {actor_id=Only For Testing, actor_owning_identity=O=Mock Company 1, L=London, C=GB, actor_store_id=TEST, fiber-id=10000001, flow-id=728c17b6-5dee-402d-a7d2-bea19968f488, invocation_id=61d4c534-77d9-413d-aa06-8e649a9ca746, invocation_timestamp=2020-08-03T20:39:07.889Z, origin=Only For Testing, session_id=61d4c534-77d9-413d-aa06-8e649a9ca746, session_timestamp=2020-08-03T20:39:07.889Z, thread-id=106}
+[WARN ] 2020-08-03T20:39:08,388Z [Mock network] transactions.TransactionBuilder. - Reverting back to using hash constraints for contract InterStellar.TokenContract {actor_id=Only For Testing, actor_owning_identity=O=Mock Company 1, L=London, C=GB, actor_store_id=TEST, fiber-id=10000001, flow-id=728c17b6-5dee-402d-a7d2-bea19968f488, invocation_id=61d4c534-77d9-413d-aa06-8e649a9ca746, invocation_timestamp=2020-08-03T20:39:07.889Z, origin=Only For Testing, session_id=61d4c534-77d9-413d-aa06-8e649a9ca746, session_timestamp=2020-08-03T20:39:07.889Z, thread-id=106}
 [INFO ] 2020-08-03T20:39:12,614Z [Mock network] corda.flow. - Received transaction acknowledgement request from party O=Mock Company 1, L=London, C=GB. {fiber-id=10000002, flow-id=e0668663-6686-46fc-8100-34fa1f21b32d, invocation_id=c5869e95-1d7e-4895-8bee-26c322885720, invocation_timestamp=2020-08-03T20:39:12.451Z, origin=O=Mock Company 1, L=London, C=GB, session_id=c5869e95-1d7e-4895-8bee-26c322885720, session_timestamp=2020-08-03T20:39:12.451Z, thread-id=106, tx_id=1240C4B063D31E74358B6EFB7E9DE6769D39A3CD284636E1966CBA032458D835}
 [INFO ] 2020-08-03T20:39:12,712Z [Mock network] corda.flow. - Transaction dependencies resolution completed. {fiber-id=10000002, flow-id=e0668663-6686-46fc-8100-34fa1f21b32d, invocation_id=c5869e95-1d7e-4895-8bee-26c322885720, invocation_timestamp=2020-08-03T20:39:12.451Z, origin=O=Mock Company 1, L=London, C=GB, session_id=c5869e95-1d7e-4895-8bee-26c322885720, session_timestamp=2020-08-03T20:39:12.451Z, thread-id=106, tx_id=1240C4B063D31E74358B6EFB7E9DE6769D39A3CD284636E1966CBA032458D835}
 [INFO ] 2020-08-03T20:39:12,927Z [Mock network] corda.flow. - No need to notarise this transaction. {actor_id=Only For Testing, actor_owning_identity=O=Mock Company 1, L=London, C=GB, actor_store_id=TEST, fiber-id=10000001, flow-id=728c17b6-5dee-402d-a7d2-bea19968f488, invocation_id=61d4c534-77d9-413d-aa06-8e649a9ca746, invocation_timestamp=2020-08-03T20:39:07.889Z, origin=Only For Testing, session_id=61d4c534-77d9-413d-aa06-8e649a9ca746, session_timestamp=2020-08-03T20:39:07.889Z, thread-id=106, tx_id=1240C4B063D31E74358B6EFB7E9DE6769D39A3CD284636E1966CBA032458D835}
@@ -1770,7 +1770,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:13,587Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203913.422/nodes/0/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:13,587Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203913.422/nodes/0/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:13,638Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:13,647Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:13,647Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:13,647Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:13,661Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -1822,7 +1822,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:16,397Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203913.422/nodes/1/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:16,397Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203913.422/nodes/1/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:16,444Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:16,502Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:16,502Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:16,502Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:16,511Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -1877,7 +1877,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:18,989Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203913.422/nodes/2/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:18,989Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203913.422/nodes/2/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:19,037Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:19,093Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:19,093Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:19,093Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:19,100Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -1947,7 +1947,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:24,486Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203924.200/nodes/0/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:24,486Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203924.200/nodes/0/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:24,527Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:24,534Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:24,534Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:24,535Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:24,549Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -1999,7 +1999,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:26,386Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203924.200/nodes/1/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:26,386Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203924.200/nodes/1/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:26,448Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:26,496Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:26,496Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:26,496Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:26,503Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -2054,7 +2054,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:28,284Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203924.200/nodes/2/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:28,285Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203924.200/nodes/2/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:28,372Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:28,433Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:28,433Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:28,433Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:28,440Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -2124,7 +2124,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:33,662Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203933.541/nodes/0/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:33,662Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203933.541/nodes/0/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:33,710Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:33,719Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:33,719Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:33,719Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:33,733Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -2176,7 +2176,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:35,628Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203933.541/nodes/1/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:35,629Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203933.541/nodes/1/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:35,693Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:35,743Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:35,743Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:35,743Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:35,751Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -2231,7 +2231,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:37,620Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203933.541/nodes/2/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:37,620Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203933.541/nodes/2/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:37,681Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:37,747Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:37,747Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:37,747Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:37,754Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -2301,7 +2301,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:43,179Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203943.064/nodes/0/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:43,180Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203943.064/nodes/0/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:43,227Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:43,235Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:43,235Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:43,236Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:43,248Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -2353,7 +2353,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:45,533Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203943.064/nodes/1/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:45,533Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203943.064/nodes/1/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:45,585Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:45,657Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:45,657Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:45,657Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:45,664Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -2408,7 +2408,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:47,761Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203943.064/nodes/2/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:47,761Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203943.064/nodes/2/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:47,813Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:47,873Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:47,873Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:47,873Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:47,881Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -2478,7 +2478,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:53,320Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203953.189/nodes/0/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:53,320Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203953.189/nodes/0/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:53,390Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:53,403Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:53,403Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:53,403Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:53,422Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -2530,7 +2530,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:55,342Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203953.189/nodes/1/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:55,342Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203953.189/nodes/1/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:55,413Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:55,481Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:55,481Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:55,481Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:55,487Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1
@@ -2585,7 +2585,7 @@ java.lang.IllegalArgumentException: Zero Inputs Expected
 [INFO ] 2020-08-03T20:39:57,343Z [Test worker] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203953.189/nodes/2/cordapps/Project-InterSteller.jar, rootPackageName=null) {}
 [INFO ] 2020-08-03T20:39:57,343Z [Test worker] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/G:/Github%20Repos/r3-Corda-Practise/Project-InterSteller/build/mock-network/20200803-203953.189/nodes/2/cordapps/Project-InterSteller.jar {}
 [INFO ] 2020-08-03T20:39:57,398Z [Test worker] internal.InternalMockNetwork$MockNode. - Node starting up ... {}
-[INFO ] 2020-08-03T20:39:57,467Z [Test worker] internal.NodeFlowManager. - Registered bootcamp.TokenIssueFlowInitiator to initiate bootcamp.TokenIssueFlowResponder (version 1) {}
+[INFO ] 2020-08-03T20:39:57,467Z [Test worker] internal.NodeFlowManager. - Registered InterStellar.TokenIssueFlowInitiator to initiate InterStellar.TokenIssueFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:57,467Z [Test worker] internal.NodeFlowManager. - Registered examples.ArtTransferFlowInitiator to initiate examples.ArtTransferFlowResponder (version 1) {}
 [INFO ] 2020-08-03T20:39:57,475Z [Test worker] internal.InternalMockNetwork$MockNode. - Loaded network parameters: NetworkParameters {
       minimumPlatformVersion=1

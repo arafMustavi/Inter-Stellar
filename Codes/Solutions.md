@@ -1,7 +1,7 @@
 # TokenState
 
 ```java
-    package bootcamp;
+    package InterStellar;
     
     import net.corda.core.contracts.BelongsToContract;
     import net.corda.core.contracts.ContractState;
@@ -56,7 +56,7 @@
 # TokenContract
 
 ```java
-    package bootcamp;
+    package InterStellar;
     
     import net.corda.core.contracts.CommandData;
     import net.corda.core.contracts.CommandWithParties;
@@ -70,7 +70,7 @@
     import static net.corda.core.contracts.ContractsDSL.requireThat;
     
     public class TokenContract implements Contract {
-        public static String ID = "bootcamp.TokenContract";
+        public static String ID = "InterStellar.TokenContract";
     
         @Override
         public void verify(LedgerTransaction tx) throws IllegalArgumentException {
@@ -107,7 +107,7 @@
 # TokenIssueFlowInitiator
 
 ```java
-    package bootcamp;
+    package InterStellar;
     
     import co.paralleluniverse.fibers.Suspendable;
     import net.corda.core.contracts.CommandData;
@@ -177,6 +177,6 @@
 killall -9 java
 
 ./build/nodes/runnodes
-flow start bootcamp.TokenIssueFlowInitiator owner: PartyB, amount: 50
+flow start InterStellar.TokenIssueFlowInitiator owner: PartyB, amount: 50
 ```
 

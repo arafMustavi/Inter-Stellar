@@ -1,4 +1,4 @@
-package bootcamp;
+package InterStellar;
 
 import co.paralleluniverse.fibers.Suspendable;
 import net.corda.core.flows.*;
@@ -6,9 +6,7 @@ import net.corda.core.identity.Party;
 import net.corda.core.transactions.SignedTransaction;
 import net.corda.core.transactions.TransactionBuilder;
 import net.corda.core.utilities.ProgressTracker;
-import net.corda.core.contracts.CommandData;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 import static java.util.Collections.singletonList;

@@ -7,6 +7,8 @@ To Deploy the Network:
 
 ```
 gradlew.bat deployNodes
+gradlew.bat clean deployNodes
+
 ```
 
 To run the Network:
@@ -27,8 +29,8 @@ flow list
 
 flow 
 
-start TokenIssueFlowInitiator owner: BankA, amount: 5000000000 
+start TokenIssueFlowInitiator owner: BankA, amount: 500 
 
-run vaultQuery contractStateType: bootcamp.TokenState
+run vaultQuery contractStateType: InterStellar.TokenState
 
 ```

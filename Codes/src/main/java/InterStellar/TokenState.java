@@ -1,4 +1,4 @@
-package bootcamp;
+package InterStellar;
 
 import net.corda.core.contracts.BelongsToContract;
 import net.corda.core.contracts.ContractState;

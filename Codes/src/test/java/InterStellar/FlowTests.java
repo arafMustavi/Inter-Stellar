@@ -1,4 +1,4 @@
-package bootcamp;
+package InterStellar;
 
 import net.corda.core.concurrent.CordaFuture;
 import net.corda.core.contracts.Command;
@@ -12,7 +12,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Arrays;
 import java.util.Collections;
 
 import static org.junit.Assert.*;
@@ -76,7 +75,7 @@ public class FlowTests {
         assertEquals(1, signedTransaction.getTx().getOutputStates().size());
         TransactionState output = signedTransaction.getTx().getOutputs().get(0);
 
-        assertEquals("bootcamp.TokenContract", output.getContract());
+        assertEquals("InterStellar.TokenContract", output.getContract());
     }
 
     @Test
